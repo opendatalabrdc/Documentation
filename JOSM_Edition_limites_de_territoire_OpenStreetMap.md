@@ -6,7 +6,7 @@ Ce document a ét réalisé en juillet 2018 dans le cadre du projet OpenCities �
 
 ## Limites des territoires dans OSM
 
-Les polygones de limites administratives dans OpenStreetMap  décrivent les contours externes du territoire. Il est aussi possible d’y ajouter des trous correspondant à des zones d’exclusion à l’intérieur du territoire. 
+Les polygones de limites administratives dans OpenStreetMap  décrivent les contours externes du territoire. Il est aussi possible d’y ajouter des trous correspondant à des zones d’exclusion à l’intérieur du territoire. Les limites de territoire sont décrites plus en détail dans [Les limites administratives dans OpenStreetMap](Les_limites_administratives_dans_OpenStreetMap.md).
 
 Dans OSM, le type d’objet relation est utilisé pour créer des collections d’objets regroupant des données plus ou moins complexes. Les relations type=boundary servent à délimiter ces territoires.
  L’ajout de clés OSM spécifiques aux limites administratives permet également de hiérarchiser les différentes limites administratives (ie. pays, province, commune, etc.).  La page wiki OSM [boundary=administrative](https://wiki.openstreetmap.org/wiki/Tag:boundary=administrative) décrit cette hiérarchie et répertorie les codes de niveaux administratifs utilisés dans les différents pays. Le tableau 1 présente un exemple de hiérarchie des territoires en RDC.
