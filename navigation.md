@@ -1,8 +1,4 @@
-# Table des matières
-
-* [Documentation](https://opendatalabrdc.github.io/Documentation/)
-
-* [Osm-RDC](https://opendatalabrdc.github.io/Documentation/contact.md)
-
-* [@osm-rdc](https://twitter.com/OSM_CD)
+ [Documentation](https://opendatalabrdc.github.io/Documentation/index.html)
+ [Blog OSM RDC](http://openstreetmap.cd/fr/)
+ [Twitter @osm_cd](https://twitter.com/OSM_CD)
 
