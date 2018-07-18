@@ -1,6 +1,6 @@
 # OpenDatalabRDC
 
 * [Documentation](https://opendatalabrdc.github.io/Documentation/)
-* [Osm-RDC](https://opendatalabrdc.github.io/Documentation/contact.md)
-* [JOSM Edition Limites de territoire OpenStreetMap](https://github.com/pierzen/Tutoriels-OSM/wiki/JOSM-Edition-des-Limites-de-territoire-OpenStreetMap)
+* [Osm-RDC](https://twitter.com/OSM_CD)
+* [JOSM Edition Limites de territoire OpenStreetMap](JOSM-Edition-des-Limites-de-territoire-OpenStreetMap.md)
 
