@@ -1,6 +1,8 @@
-[Documentation](https://opendatalabrdc.github.io/Documentation/)
+# Table des matières
 
-[Osm-RDC](https://opendatalabrdc.github.io/Documentation/contact.md)
+* [Documentation](https://opendatalabrdc.github.io/Documentation/)
 
-[@osm-rdc](https://twitter.com/OSM_CD)
+* [Osm-RDC](https://opendatalabrdc.github.io/Documentation/contact.md)
+
+* [@osm-rdc](https://twitter.com/OSM_CD)
 
