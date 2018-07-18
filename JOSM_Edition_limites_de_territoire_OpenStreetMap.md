@@ -17,9 +17,12 @@ Dans OSM, le type d’objet relation est utilisé pour créer des collections d�
 | Territoire  | admin_level |  name |
 | :------------- | -----------: | :-------------------------------- |
 | Pays  |  2 | République démocratique du Congo  |
-| Ville / Province ? |  4 | Kinshasa | 
-| Commune  |  7 | Kisenso | 
+| Province |  4 | Kinshasa | 
+| Territoire / Ville |  6 | Kinshasa | 
+| Collectivité / Commune  |  7 | Kisenso | 
 | Quartier  |  8  | Mission | 
+| Localité ou Village  |  9  |  | 
+| Subdivision, Village  | 10  |  | 
 
 ## Requête Overpass – Extraire les données de territoire existantes
 
