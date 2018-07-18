@@ -88,7 +88,7 @@ Lors de l’édition, diverses actions sont réalisées telles couper, coller, c
 
 
 **Base OpenStreetMap, Relation, Quartier Mission (admin_level=8)**  
-    |
+
     <relation id="8432841" visible="true" version="1" changeset="60474930" timestamp="2018-07-06T18:47:14Z" user="PierZen" uid="226516">
     <member type="way" ref="605700586" role="outer"/>
     <member type="way" ref="605700594" role="outer"/>
