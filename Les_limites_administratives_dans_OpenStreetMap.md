@@ -1,4 +1,4 @@
-#Le territoire – Un élément essentiel de la cartographie
+##Le territoire – Un élément essentiel de la cartographie
 
 On illustre sur les cartes les éléments naturels tels que cours d’eau et sommets de montagnes, la couverture du sol, le réseau routier, les systèmes scolaire et de santé, commerces, usines, etc.  La délimitation du territoire est aussi un élément essentiel pour les administrations gouvernementales, les entreprises et les citoyens. L’ajout des limites administratives sur les cartes OSM permet à ces différents acteurs économiques et citoyens de mieux s’informer, planifier, gérer divers projets sur le territoire et jouer un rôle dans la prise de décision.  
 
@@ -15,7 +15,7 @@ Figure 2: Géolocalisation : Avenue Kivunda, Kinshasa
 
 Par exemple, l’outil de géolocalisation de OSM nous permet  de localiser l’Avenue Kivunda à Kinshasa ou encore un commerce ou une adresse sur cette rue. Le résultat de recherche ajoute les informations sur la hiérarchie des territoires dans lesquels se trouve l’élément recherché (ie. province de Kinshasa, commune de Kisenso, quartier Mission).
 
-#Hiérarchisation des limites administratives dans OSM
+##Hiérarchisation des limites administratives dans OSM
 
 Les polygones de limites administratives dans OpenStreetMap  décrivent les contours du territoire. Il est aussi possible d’y ajouter des trous correspondant à des zones exclues du territoire. 
 Dans OSM, les relation de territoire sont des collections qui regroupent les informations qui définissent les contours internes (ie. zones d’exclusion) et externes du territoire, et les attributs.  
@@ -35,7 +35,7 @@ L’ajout de clés OSM spécifiques aux limites administratives permet de hiéra
 | Subdivision, Village  | 10  |  | 
 
 
-#Obtention des limites de territoires
+##Obtention des limites de territoires
 
 Les limites de territoire sont définies par les autorités gouvernementales de chaque pays.  Les communautés OSM doivent donc discuter avec ces autorités pour obtenir un fichier vectoriel numérique si disponible et obtenir une licence de publication compatible avec OSM.  Le groupe responsable des aspects juridiques de OSM a établi une procédure pour les imports et il est important de la suivre, sinon les données pourront être effacées de la base OSM par la suite de façon  à ne pas contaminer la base de donnée avec des données dont la licence de publication n’est pas claire. La page wiki  décrit les procédures d’import.  Une page wiki décrivant la licence et les différentes étapes pour l’import doit ête produite. Il faut ensuite communiquer avec le groupe de discussion Import de OSM et y décrire le projet. Il faut habituellement prévoir une période minimum de deux semaines pour permettre aux divers collaborateurs OSM de réagir à ce projet.
 
