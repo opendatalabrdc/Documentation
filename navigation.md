@@ -2,5 +2,5 @@
 
 [Osm-RDC](https://opendatalabrdc.github.io/Documentation/contact.md)
 
-[JOSM Edition Limites de territoire OpenStreetMap](https://opendatalabrdc.github.io/Documentation/OSM-Edition-des-Limites-de-territoire-OpenStreetMap.md)
+[@osm-rdc](https://twitter.com/OSM_CD)
 
