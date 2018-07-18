@@ -22,7 +22,8 @@ Deux options existent pour définir ce territoire. Nous allons les présenter to
 La première solution est plus simple à définir mais plus périlleuse lors de l’exécution. Il peut y avoir utilisation excessive de la mémoire amenant parfois un plantage du système. À expérimenter donc avec prudence.
 
 
-    **Solution 1 – geocodeArea:nom – Définition de zone géographique dans Overpass**
+**Solution 1 – geocodeArea:nom – Définition de zone géographique dans Overpass**
+
     Instructions avec paramètre {{geocodeArea:Territoire}}                                                                               
     [out:xml][timeout:60]; 
     {{geocodeArea:Kisenso}}; 
@@ -32,7 +33,8 @@ La première solution est plus simple à définir mais plus périlleuse lors de 
 La deuxième solution nécessite de calculer le geocode à l’aide du id de la relation plus le nombre 3600000000. À titre d’exemple,  recherchons Kinshasa dans OSM et sélectionnons *Limite administrative Kisenso, Kinshasa, RD Congo*.  La relation est alors affichée avec le id OSM, soit dans ce cas-ci id=389536. 
 
 
-    **Solution 2 – (area:noGeocode) - Définition de zone géographique dans Overpass**   
+**Solution 2 – (area:noGeocode) - Définition de zone géographique dans Overpass**   
+
     Calcul du Geocode-overpass en  additionnant les deux nombres 
           3600000000 
     +         389536  (id, relation Kisenso) 
@@ -85,7 +87,8 @@ Lorsque le polygone est ouvert, le style colorie les chemins avec des lignes hac
 Lors de l’édition, diverses actions sont réalisées telles couper, coller, coller divers segments. Il peut nous arriver de briser le polygone d’une relation existante, le laisser ouvert. Dans de tels cas, le style nous permet comme ci-haut de détecter le problème.  De même, le panneau d’édition nous signale lors de l’édition de la relation que le polygone n’est pas clos. La section du bas de la figure 5 illustre comment apparait l’indicateur dans un tel cas avec une simple ligne et des repères rouges là où les chemins ne sont pas connectés.  Si cet indicateur persiste après avoir corrigé le problème, nous sélectionnon s la liste des membres à trier et cliquons à gauche sur le bouton Trier les membres. Si le problème persiste encore, on s’assure de ne pas avoir de doubons de chemins, sinon de doublons de nodes. Dans ce cas-ci, à chaque jonction entre deux chemins que nous n’avons pas de doublons de nodes. Pour joindre les deux noeuds, nous cliquons sur Ctrl-M et on vérifie à nouveau si le problème est réglé.
 
 
-    **Base OpenStreetMap, Relation, Quartier Mission (admin_level=8)**    |
+**Base OpenStreetMap, Relation, Quartier Mission (admin_level=8)**  
+    |
     <relation id="8432841" visible="true" version="1" changeset="60474930" timestamp="2018-07-06T18:47:14Z" user="PierZen" uid="226516">
     <member type="way" ref="605700586" role="outer"/>
     <member type="way" ref="605700594" role="outer"/>
