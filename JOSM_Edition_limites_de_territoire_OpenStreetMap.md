@@ -8,7 +8,7 @@ Ce document a ét réalisé en juillet 2018 dans le cadre du projet OpenCities �
 
 Les polygones de limites administratives dans OpenStreetMap  décrivent les contours externes du territoire. Il est aussi possible d’y ajouter des trous correspondant à des zones d’exclusion à l’intérieur du territoire. Les limites de territoire sont décrites plus en détail dans [Les limites administratives dans OpenStreetMap](Les_limites_administratives_dans_OpenStreetMap.md).
 
-## Requête Overpass – Extraire les données de territoire existantes
+## Requête Overpass – Extraire les données de territoire de OSM
 
 **Figure 1: Limites administratives, **
 **Commune de Kisenso et de ses quartiers**
