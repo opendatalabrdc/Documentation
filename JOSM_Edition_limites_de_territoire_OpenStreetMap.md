@@ -49,7 +49,7 @@ Pour extraire les limites de territoires à partir du Site web [Overpass Turbo](
 
 Il est aussi possible d'extraire directement à partir de JOSM. Ouvrez un nouveau calque et Sélectionnez le menu **Téléchargement des données** et copiez les instructions dans le panneau **Télécharger depuis l'API Overpass**. Cliquez ensuite sur **Télécharger**.
 
-![Site Overpass Requête d'extraction](img/Overpass-requête-territoire-Kisenso.png)
+![Site Overpass Requête d'extraction](img/Overpass-requête-territoire-Quartiers-de-Kisenso.png)
 
 ## Édition des limites territoriales à l’aide de l’éditeur JOSM
 
