@@ -26,7 +26,7 @@ La première solution est plus simple à définir mais plus périlleuse lors de 
     Instructions avec paramètre {{geocodeArea:Territoire}}                                                                               
     [out:xml][timeout:60]; 
     {{geocodeArea:Kisenso}}; 
-    relation["boundary"]; 
+    relation(area:3600389536)["boundary"][admin_level=8]; 
     out meta;>; out meta; 
 
 La deuxième solution nécessite de calculer le geocode à l’aide du id de la relation plus le nombre 3600000000. À titre d’exemple,  recherchons Kinshasa dans OSM et sélectionnons **Limite administrative Kisenso, Kinshasa, RD Congo**.  La relation est alors affichée avec le id OSM, soit dans ce cas-ci id=389536. 
@@ -40,7 +40,7 @@ La deuxième solution nécessite de calculer le geocode à l’aide du id de la 
     =     3600389536  (Geocode-overpass pour Kisenso) 
     Instructions Overpass 
     [out:xml][timeout:60]; 
-    relation(area:3600389536)["boundary"]; 
+    relation(area:3600389536)["boundary"][admin_level=8]; 
     out meta;>; out meta; 
 
 ### Extraction via site web overpass
@@ -49,19 +49,20 @@ Pour extraire les limites de territoires à partir du Site web [Overpass Turbo](
 
 Il est aussi possible d'extraire directement à partir de JOSM. Ouvrez un nouveau calque et Sélectionnez le menu **Téléchargement des données** et copiez les instructions dans le panneau **Télécharger depuis l'API Overpass**. Cliquez ensuite sur **Télécharger**.
 
+**Figure 2 : Requête, Site web [Overpass Turbo](http://overpass-turbo.eu/)**
 ![Site Overpass Requête d'extraction](img/Overpass-requête-territoire-Quartiers-de-Kisenso.png)
 
 ## Édition des limites territoriales à l’aide de l’éditeur JOSM
 
 Pour définir une nouvelle relation de limite administrative, notre objectif est de sélectionner et y ajouter tous les chemins qui forment le contour externe du polygone. Il est aussi possible de créer un trou au milieu de ce polygone pour une zone à exclure du territoire.  Il faut ensuite y ajouter les différentes clés OSM qui décrivent les caractéristiques de ce territoire. 
 
-**Figure 2 : Ajout du style Admin Boundaries**
+**Figure 3 : Ajout du style Admin Boundaries**
 ![Style Admin-Boundaries](img/JOSM-ajout-style-Admin-Boundaries.png)
 
 Pour faciliter l’édition de territoires, nous allons ajouter le style Admin Boundaries.  Sélectionnez F12 / Projection et modèles de Rendu / Onglet couleur. Dans la liste des modèles disponibles à gauche, sélectionnez «Admin boundaries».  
 Ce style colorie les polygones, y ajoute une couleur de fond différente pour chaque niveau administratif.
 
-**Figure 3 : Paramètres de style, Admin Boundaries**
+**Figure 4 : Paramètres de style, Admin Boundaries**
 ![Menu Paramètre de style](img/JOSM-Relation-Mission-partage-segments-avec-territoires-adjacents.png)
 
 Pour  définir les paramètres du style Admin Boundaries, nous repérons le panneau Coloriage à droite, cliquons sur Admin Boundaries avec le bouton droit de la souris et sélectionnons Paramètres de style. Nous sélectionnons Admin_level=8 (pour les quartiers). Les territoires de niveau 8 son coloriés en vert. Lorsque sélectionnés, ils apparaissent en rosé.
@@ -70,7 +71,7 @@ Un polygone est un chemin fermé, dont le premier et le dernier point sont conne
 
 ## JOSM - Création de relation de limite administrative 
 
-**Figure 4 : Création de multipolygone**
+**Figure 5 : Création de multipolygone**
 ![Créer un multipolygone](img/JOSM-créer-multipolygone.png)
 
 Nous sélectionnons successivement les chemins qui tracent le contour externe du polygone. Sur la barre de menu du haut, nous sélectionnons Outils / Créer un multipolygone (Touche de raccourci Ctrl+B). Dans le panneau Attributs / Membres à droite, nous voyons apparaitre la référence au multipolygone. Nous cliquons sur cette référence et sélectionnons le bouton Modifier en dessous pour accéder au panneau de la modification de la relation.
@@ -79,14 +80,14 @@ Le panneau d’édition de la relation nous permet de voir la liste des chemins 
 
 S’il était nécessaire d’ajouter une zone d’exclusion (ie. un trou dans le polygone), nous ajouterions à cette liste de membres les chemins intérieurs avec le rôle=inner.
 
-**Figure 5: Édition de relation de limite administrative**
+**Figure 6 : Édition de relation de limite administrative**
 ![Repère : Polygone clos ou ouvert](img/JOSM-Edition-relation-repere-polygone-clos.png)
 
 ## Édition / correction des relations de limites administratives
 
 Pour fin d’exemple, nous allons maintenant simuler une erreur avec un polygone ouvert et voir comment détecter de telles erreurs à l’aide du style Admin_boundaries et dans le panneau d’édition de la relation. Pour créer un polygone ouvert, nous déconnectons les nodes joignant deux chemins traçant le polygone pour le quartier Mission.
      
-**Figure 6 : Polygone ouvert**
+**Figure 7 : Polygone ouvert**
 ![Polygone ouvert](img/JOSM-Edition-relation-polygone-ouvert.png)
 
 Lorsque le polygone est ouvert, le style colorie les chemins avec des lignes hachurées et de gros rectangles jaunes nous indiquent quelles nodes ne sont pas connectées.  Après sélection des chemins (polygone non clos), et du menu Créer un multipolygone, cette fonction nous retourne un message d’erreur et la relation n’est pas créée. Il faut donc corriger avant de poursuivre.
