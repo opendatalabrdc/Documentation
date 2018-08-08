@@ -10,8 +10,7 @@ Les polygones de limites administratives dans OpenStreetMap  décrivent les cont
 
 ## Requête Overpass – Extraire les données de territoire de OSM
 
-**Figure 1: Limites administratives, **
-**Commune de Kisenso et de ses quartiers**
+**Figure 1: Limites administratives, Commune de Kisenso et de ses quartiers**
 ![Overpass Extraction territoires](img/Territoires-Commune-Kisenso-et-quartiers.png "Quarties de Kisenso" )
 Une requête Overpass est utilisée pour télécharger ces données.
 
@@ -30,7 +29,7 @@ La première solution est plus simple à définir mais plus périlleuse lors de 
     relation["boundary"]; 
     out meta;>; out meta; 
 
-La deuxième solution nécessite de calculer le geocode à l’aide du id de la relation plus le nombre 3600000000. À titre d’exemple,  recherchons Kinshasa dans OSM et sélectionnons *Limite administrative Kisenso, Kinshasa, RD Congo*.  La relation est alors affichée avec le id OSM, soit dans ce cas-ci id=389536. 
+La deuxième solution nécessite de calculer le geocode à l’aide du id de la relation plus le nombre 3600000000. À titre d’exemple,  recherchons Kinshasa dans OSM et sélectionnons **Limite administrative Kisenso, Kinshasa, RD Congo**.  La relation est alors affichée avec le id OSM, soit dans ce cas-ci id=389536. 
 
 
 ### Solution 2 – (area:noGeocode) - Définition de zone géographique dans Overpass**   
@@ -44,23 +43,25 @@ La deuxième solution nécessite de calculer le geocode à l’aide du id de la 
     relation(area:3600389536)["boundary"]; 
     out meta;>; out meta; 
 
-### extraction via site web overpass
+### Extraction via site web overpass
 
 Pour extraire les limites de territoires à partir du site web [Overpass Turbo](Site web http://overpass-turbo.eu/), copiez les instructions ci-haut dans le panneau gauche du stie et cliquez sur *Exécuter*.  Le résultat s'affiche sur la carte à droite. Le menu *Exporter* permet ensuite de sauvgarder le résultat dans différents formats (ie. osm, geosjon, etc).
 
 Il est aussi possible d'extraire directement à partir de JOSM. Sélectionnez le menu *Téléchargement des données* et copiez les instructions dans le panneau *Télécharger depuis l'API Overpass*.
 
+![Site Overpass Requête d'extraction ](img/img/Overpass-requête-territoire-Kisenso.png)
+
 ## Édition des limites territoriales à l’aide de l’éditeur JOSM
 
 Pour définir une nouvelle relation de limite administrative, notre objectif est de sélectionner et y ajouter tous les chemins qui forment le contour externe du polygone. Il est aussi possible de créer un trou au milieu de ce polygone pour une zone à exclure du territoire.  Il faut ensuite y ajouter les différentes clés OSM qui décrivent les caractéristiques de ce territoire. 
 
-**Figure 2 : Ajout du style Admin Boundaries **
+**Figure 2 : Ajout du style Admin Boundaries**
 ![Style Admin-Boundaries](img/JOSM-ajout-style-Admin-Boundaries.png)
 
 Pour faciliter l’édition de territoires, nous allons ajouter le style Admin Boundaries.  Sélectionnez F12 / Projection et modèles de Rendu / Onglet couleur. Dans la liste des modèles disponibles à gauche, sélectionnez «Admin boundaries».  
 Ce style colorie les polygones, y ajoute une couleur de fond différente pour chaque niveau administratif.
 
-**Figure 3 : Paramètres de style, Admin Boundaries **
+**Figure 3 : Paramètres de style, Admin Boundaries**
 ![Menu Paramètre de style](img/JOSM-Relation-Mission-partage-segments-avec-territoires-adjacents.png)
 
 Pour  définir les paramètres du style Admin Boundaries, nous repérons le panneau Coloriage à droite, cliquons sur Admin Boundaries avec le bouton droit de la souris et sélectionnons Paramètres de style. Nous sélectionnons Admin_level=8 (pour les quartiers). Les territoires de niveau 8 son coloriés en vert. Lorsque sélectionnés, ils apparaissent en rosé.
@@ -85,7 +86,7 @@ S’il était nécessaire d’ajouter une zone d’exclusion (ie. un trou dans l
 
 Pour fin d’exemple, nous allons maintenant simuler une erreur avec un polygone ouvert et voir comment détecter de telles erreurs à l’aide du style Admin_boundaries et dans le panneau d’édition de la relation. Pour créer un polygone ouvert, nous déconnectons les nodes joignant deux chemins traçant le polygone pour le quartier Mission.
      
-Figure 6 : Polygone ouvert
+**Figure 6 : Polygone ouvert**
 ![Polygone ouvert](img/JOSM-Edition-relation-polygone-ouvert.png)
 
 Lorsque le polygone est ouvert, le style colorie les chemins avec des lignes hachurées et de gros rectangles jaunes nous indiquent quelles nodes ne sont pas connectées.  Après sélection des chemins (polygone non clos), et du menu Créer un multipolygone, cette fonction nous retourne un message d’erreur et la relation n’est pas créée. Il faut donc corriger avant de poursuivre.
