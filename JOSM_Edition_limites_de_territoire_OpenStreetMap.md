@@ -45,11 +45,11 @@ La deuxième solution nécessite de calculer le geocode à l’aide du id de la 
 
 ### Extraction via site web overpass
 
-Pour extraire les limites de territoires à partir du site web [Overpass Turbo](Site web http://overpass-turbo.eu/), copiez les instructions ci-haut dans le panneau gauche du stie et cliquez sur *Exécuter*.  Le résultat s'affiche sur la carte à droite. Le menu *Exporter* permet ensuite de sauvgarder le résultat dans différents formats (ie. osm, geosjon, etc).
+Pour extraire les limites de territoires à partir du Site web [Overpass Turbo](http://overpass-turbo.eu/), copiez les instructions ci-haut dans le panneau gauche du site et cliquez sur **Exécuter**.  Le résultat s'affiche sur la carte à droite. Le menu **Exporter** permet ensuite de sauvgarder le résultat dans différents formats (ie. osm, geosjon, etc).
 
-Il est aussi possible d'extraire directement à partir de JOSM. Sélectionnez le menu *Téléchargement des données* et copiez les instructions dans le panneau *Télécharger depuis l'API Overpass*.
+Il est aussi possible d'extraire directement à partir de JOSM. Ouvrez un nouveau calque et Sélectionnez le menu **Téléchargement des données** et copiez les instructions dans le panneau **Télécharger depuis l'API Overpass**. Cliquez ensuite sur **Télécharger**.
 
-![Site Overpass Requête d'extraction ](img/img/Overpass-requête-territoire-Kisenso.png)
+![Site Overpass Requête d'extraction](img/Overpass-requête-territoire-Kisenso.png)
 
 ## Édition des limites territoriales à l’aide de l’éditeur JOSM
 
