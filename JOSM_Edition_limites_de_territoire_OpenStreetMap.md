@@ -1,3 +1,5 @@
+## JOSM Édition des limites de territoire OpenStreetMap
+
 Ce tutoriel s’adresse aux contributeurs OSM expérimentés. Les étapes d'édition à l’aide du logiciel JOSM des relations de territoire OSM seront revues.
 Les relations de territoire OSM  sont des collections regroupant les contours internes / externes des polygones et leurs attributs.
 
