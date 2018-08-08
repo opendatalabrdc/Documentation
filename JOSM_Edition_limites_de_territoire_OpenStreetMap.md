@@ -22,7 +22,7 @@ Deux options existent pour définir ce territoire. Nous allons les présenter to
 La première solution est plus simple à définir mais plus périlleuse lors de l’exécution. Il peut y avoir utilisation excessive de la mémoire amenant parfois un plantage du système. À expérimenter donc avec prudence.
 
 
-**Solution 1 – geocodeArea:nom – Définition de zone géographique dans Overpass**
+### Solution 1 – geocodeArea:nom – Définition de zone géographique dans Overpass**
 
     Instructions avec paramètre {{geocodeArea:Territoire}}                                                                               
     [out:xml][timeout:60]; 
@@ -33,7 +33,7 @@ La première solution est plus simple à définir mais plus périlleuse lors de 
 La deuxième solution nécessite de calculer le geocode à l’aide du id de la relation plus le nombre 3600000000. À titre d’exemple,  recherchons Kinshasa dans OSM et sélectionnons *Limite administrative Kisenso, Kinshasa, RD Congo*.  La relation est alors affichée avec le id OSM, soit dans ce cas-ci id=389536. 
 
 
-**Solution 2 – (area:noGeocode) - Définition de zone géographique dans Overpass**   
+### Solution 2 – (area:noGeocode) - Définition de zone géographique dans Overpass**   
 
     Calcul du Geocode-overpass en  additionnant les deux nombres 
           3600000000 
@@ -43,6 +43,12 @@ La deuxième solution nécessite de calculer le geocode à l’aide du id de la 
     [out:xml][timeout:60]; 
     relation(area:3600389536)["boundary"]; 
     out meta;>; out meta; 
+
+### extraction via site web overpass
+
+Pour extraire les limites de territoires à partir du site web [Overpass Turbo](Site web http://overpass-turbo.eu/), copiez les instructions ci-haut dans le panneau gauche du stie et cliquez sur *Exécuter*.  Le résultat s'affiche sur la carte à droite. Le menu *Exporter* permet ensuite de sauvgarder le résultat dans différents formats (ie. osm, geosjon, etc).
+
+Il est aussi possible d'extraire directement à partir de JOSM. Sélectionnez le menu *Téléchargement des données* et copiez les instructions dans le panneau *Télécharger depuis l'API Overpass*.
 
 ## Édition des limites territoriales à l’aide de l’éditeur JOSM
 
