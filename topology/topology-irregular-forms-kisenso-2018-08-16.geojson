@@ -3,6 +3,10 @@
   "generator": "PlanetOSM / overpass-ide",
   "copyright": "PlanetOSM Topological Evaluation - Buildings irregular forms - Overpass extract from www.openstreetmap.org - ODbL license",
   "timestamp": "2018-08-16T00:00:00Z",
+  "properties": {
+	"stroke": "red"
+	"stroke-width": "3"
+  }
 },
 
   "features": [
